@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*Resert*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #239b7e;
+  --main-font: "Playfair Display", Serif;
+  --primary-font: "Roboto", sans-serif;
+}
+
+/*nav st*/
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  background-color: rgb(240, 239, 239);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.logo {
+  margin-left: 5rem;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 5rem;
+}
+
+.burger span {
+  border: 2px solid black;
+  width: 35px;
+  height: 1px;
+  margin: 2px;
+}
+/*nav end*/
+
+/*header st*/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  margin-top: 2rem;
+}
+
+.main-headings {
+  font-size: 4rem;
+  font-family: var(--main-font);
+  color: #00000097;
+  transform: translateY(-40px);
+  line-height: 5rem;
+}
+
+.main-headings span {
+  color: black;
+}
+
+.primary-headings {
+  max-width: 500px;
+  color: #716d6b;
+  font-family: var(--primary-font);
+  margin-bottom: 1rem;
+}
+
+.btn-fill {
+  background-color: var(--main-color);
+  color: #fff;
+  border: 1px solid var(--main-color);
+  padding: 12px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-fill:hover {
+  background-color: #fff;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+
+.btn-outline.active {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  background: transparent;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-outline.active:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.img-container {
+  border-radius: 50%;
+  box-shadow: 4px 7px 5px 2px #bcbaba;
+}
+.header-img {
+  border-radius: 100%;
+  background: url(images/oswaldo-ibanez-1NPUmTaiMeg-unsplash.jpg);
+  background-position: top;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+/*Header End*/
+
+/*section-one*/
+.section-one {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 7rem;
+  /* height: 100vh; */
+}
+
+.section-one-img {
+  background: url(images/img/download\ \(1\).jpeg);
+ background-position: center;
+ background-size: cover;
+}
+
+/*section one end*/
+
+/*Products st*/
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+.products .product-heading {
+  font-family: var(--main-font); 
+  margin-bottom: 2rem;
+  font-size: 2.3rem;
+}
+.line.product {
+ transform: translate(-290px,12px);
+}
+
+.product-categories button {
+  margin-right: 20px;
+  margin-bottom: 2rem;
+}
+
+.products .product-items-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  max-width: 60rem;
+}
+
+.products .product-items-container .item {
+  margin: 20px;
+}
+
+.product-items-container .item .item-layer {
+  background: #ebf1f0;
+  padding: 40px;
+  margin-right: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.item-layer img {
+  width: 9.375rem;
+  height: 12.5rem;
+}
+
+.item-name {
+  font-family: var(--primary-font);
+  margin-bottom: 1rem;
+}
+
+.item-price {
+  font-family: var(--primary-font);
+  margin-bottom: 0.625rem;
+}
+
+.item .view-products {
+  font-family: var(--primary-font);
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  padding: 5px;
+}
+/*product section end*/
+
+/*CUstomer Review st*/
+.customer-heading {
+  font-family: var(--main-font);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 10rem;
+}
+.line {
+  border: 1px solid black;
+ width: 30px;
+ height: 1px;
+ display: inline-block;
+ transform: translate(-310px,12px);
+}
+
+.castomer-reviews {
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.castomer {
+  text-align: center;
+}
+
+.castomer-reviews .castomer-description {
+  font-size: 12px;
+  margin-top: 20px;
+  max-width: 200px;
+  text-align: center;
+  margin: 10px;
+  font-family: var(--primary-font);
+}
+.castomer .castomer-img .img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: top;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.img-one {
+  background: url(images/img/download.jpeg);
+}
+
+.img-two {
+  background: url(images/img/Blakely\ Decade\ Collection.jpeg);
+  background-position: top;
+}
+
+.img-three {
+  background: url(images/gesphotoss-1i9K55ni5Dk-unsplash.jpg);
+}
+/*Customer review End*/
+
+/*footer st*/
+footer {
+  background:#1f1e1e;
+  margin-top: 10rem;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 40vh;
+  font-family: var(--primary-font);
+
+}
+
+footer .container .footer-heading {
+  margin-bottom: 3rem;
+
+}
+
+footer .container .footer-primary-heading {
+  font-weight: normal;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+/*Footer End*/
+
+/*Responsiveness*/
+@media only screen and (max-width: 600px) { 
+  .logo,.burger {
+    margin: 0 4px;
+  }
+
+  header {
+    margin-top: 8rem;
+    text-align: center;
+    padding: 1rem;
+    height: 90vh;
+  }
+  .btns-container {
+    margin-top: 2rem;
+  }
+  .header-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .section-one {
+    height: 100vh;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .products .product-heading {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .product-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .castomer {
+    margin-bottom: 2.3rem;
+  }
+
+  footer {
+    text-align: center;
+    height: 35vh;
+  }
+  footer .container .footer-heading {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem
+  }
+  .line.product {
+    transform: translate(-19.375rem,1.25rem);
+  }
+
+}
